@@ -12,7 +12,7 @@ kubectl cluster-info
 2. Create 2 applications named frontend and app by using following commands
 ```
 kubectl create deployment frontend --replicas=3 --image=httpd
-kubectl expose deploy/frontend --port=80 –type NodePort
+kubectl expose deploy/frontend --port=80 –-type='NodePort'
 ```
 ```
 kubectl create deployment app --replicas=2 --image=tomcat
